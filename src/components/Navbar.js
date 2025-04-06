@@ -34,9 +34,9 @@ const Navbar = (props) => {
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-outline-success" type="submit">Search</button>
                         </form> */}
-                        <div className="form-check form-switch">
+                        <div className={`form-check form-switch text-${props.mode=== 'dark' ? 'light' : 'dark'}`}>
                             <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="switchCheckDefault" />
-                                <label className="form-check-label" htmlFor="switchCheckDefault">Enable Dark mode</label>
+                            <label className="form-check-label" htmlFor="switchCheckDefault">Enable Dark mode</label>
                         </div>
                     </div>
                 </div>
